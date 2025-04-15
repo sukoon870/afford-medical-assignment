@@ -24,28 +24,26 @@ body {
     color: #334155;
 }
 
-@layer components {
-    .card {
-        @apply bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300;
-    }
+.card {
+    @apply bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300;
+}
 
-    .btn {
-        @apply px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300;
-    }
+.btn {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300;
+}
 
-    .btn-secondary {
-        @apply px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors duration-300;
-    }
+.btn-secondary {
+    @apply px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors duration-300;
+}
 
-    .container-custom {
-        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
-    }
+.container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
 
-    .nav-link {
-        @apply px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md transition-colors duration-300;
-    }
+.nav-link {
+    @apply px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md transition-colors duration-300;
+}
 
-    .nav-link-active {
-        @apply px-4 py-2 text-blue-600 bg-blue-50 rounded-md;
-    }
+.nav-link-active {
+    @apply px-4 py-2 text-blue-600 bg-blue-50 rounded-md;
 }

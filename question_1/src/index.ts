@@ -2,6 +2,7 @@ import express, { Request, Response, NextFunction } from "express";
 import { env } from "./env";
 import { getUsers, getUserPosts, getPostComments } from "./test-server-utils";
 import { PostWithCommentCount, UserWithCommentCount } from "./types";
+import cors from "cors";
 
 const cache = {
     users: new Map<string, UserWithCommentCount>(),
@@ -12,6 +13,12 @@ const cache = {
 };
 
 const app = express();
+app.use(
+    cors({
+        methods: ["GET", "POST"],
+        origin: ["http://localhost:3000"],
+    })
+);
 app.use(express.json());
 
 const refreshDataIfNeeded = async (
