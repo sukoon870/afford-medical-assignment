@@ -1,0 +1,8 @@
+{
+    "email": "your-email@example.com",
+    "name": "your-name",
+    "rollNo": "your-roll-number",
+    "accessCode": "your-access-code",
+    "clientID": "your-client-id",
+    "clientSecret": "your-client-secret"
+} 
